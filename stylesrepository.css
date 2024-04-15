@@ -6,11 +6,15 @@ body {
 }
 
 header {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
     text-align: center;
 }
+
 
 nav {
     background-color: #f4f4f4;
@@ -162,4 +166,11 @@ body {
     border-radius: 5px;
     resize: vertical; /* Allow vertical resizing of the textarea */
   }
+
+.logo {
+   width: 50px; /* Adjust the width as needed */
+   height: auto; /* Maintain aspect ratio */
+   margin-right: 10px; /* Add some space between the image and text */
+}
+
   

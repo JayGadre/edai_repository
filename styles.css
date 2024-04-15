@@ -6,6 +6,9 @@ body {
 }
 
 header {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
@@ -38,79 +41,193 @@ nav ul li a:hover {
     color: #777;
 }
 
-section {
-    padding: 20px;
+.profile-card {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.profile-image {
+    margin-right: 20px;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.profile-info {
+    text-align: left;
+}
+
+.profile-info h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.profile-info p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.profile-info p strong {
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
     text-align: center;
+    padding: 10px 0;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Add styles for the communities page */
+
+.communities {
+    padding: 20px;
+}
+
+.communities h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.communities ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.communities li {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.communities li h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.communities li p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.communities li button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.communities li button:hover {
+    background-color: #0056b3;
 }
 
 
 
-/* Style for login page */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    width: 100%;
-    height: 100%;
+.communities-joined {
+    margin-top: 20px;
+}
+
+.communities-joined h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.communities-joined ul {
+    list-style-type: none;
     padding: 0;
-    background-image:"login_bg.jpg";
-    background-color: "#cccccc";
-    
-  }
-  
-  .container {
-    width: 100%;
-    max-width: 400px;
-    margin: 100px auto;
-    background-color: #373636;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .mb-3 {
-    margin-bottom: 20px;
-  }
-  
-  .mb-3 input {
-    width: 90%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .mb-3 label {
-    font-weight: bold;
-  }
-  
-  .btn {
-    background-color: #4caf50;
-    color: #fff; /* Default color for button text */
+}
+
+.communities-joined ul li {
+    background-color: #f9f9f9;
     padding: 10px 20px;
-    border: none;
+    margin-bottom: 10px;
     border-radius: 5px;
-    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
-  }
-  
-  .btn:hover {
-    background-color: #45a049;
-  }
-  
-  /* Style for the button text color */
-  .btn-text-color {
-    color: #ff0000; /* Change this to the desired color */
-  }
-  
-  
-  .btn:hover {
-    background-color: #404440;
-  }
-  
-  /* Image from Unsplash */
-  .login-img {
-    width: 100%;
-    max-width: 300px;
-    margin: 20px auto;
-    display: block;
-  }
-  
+}
+
+.communities-joined ul li:hover {
+    background-color: #e9e9e9;
+}
+
+/* Add styles for the profile page */
+
+/* Add styles for the profile page */
+
+.profile-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+.communities-joined {
+    width: 30%; /* Adjust as needed */
+    margin-right: 20px; /* Add some spacing between profile info and communities */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    order: 2; /* Set order to push communities joined to the right */
+}
+
+.communities-joined h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.communities-joined ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.communities-joined ul li {
+    background-color: #007bff;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.communities-joined ul li:hover {
+    background-color: #0056b3;
+}
+
+/* Add styles for the profile information box */
+.profile-info {
+    border: 2px solid #ccc; /* Add a border around the profile information */
+    padding: 20px; /* Add padding inside the border */
+    border-radius: 5px; /* Add rounded corners */
+}
+
+/* Add styles for the communities page */
+.communities-joined {
+    margin-top: 20px;
+}
+
+.logo {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add some space between the image and text */
+}
+
+
